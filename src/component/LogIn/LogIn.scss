@@ -1,0 +1,49 @@
+.login {
+  font-family: "Abel";
+  font-size: 18px;
+  font-weight: 500;
+  padding-left: 20px;
+  display: flex;
+  position: relative;
+  .LogOut {
+    position: absolute;
+    top: 37px;
+    background: #e4e4e4;
+    ul {
+      list-style: none;
+      margin: none;
+      a {
+        padding: 7px 10px;
+        display: block;
+        font-weight: 500;
+        cursor: pointer;
+        font-family: auto;
+        &:hover {
+          background-color: #ccc;
+          color: #000;
+        }
+      }
+    }
+  }
+
+  .nameUser {
+    width: 60%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+.avtlist {
+  width: 35px;
+  margin-right: 8px;
+  border-radius: 50%;
+}
+.avt {
+  width: 100%;
+  border-radius: 50%;
+}
+.ant-tabs-tab {
+  font-size: 20px !important;
+}
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: red !important;
+}

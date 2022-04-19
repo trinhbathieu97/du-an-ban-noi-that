@@ -1,0 +1,85 @@
+.User {
+  margin: 0 5%;
+  background: linear-gradient(
+    -180deg,
+    #fafafa,
+    rgb(239, 239, 239),
+    rgb(0, 0, 0, 0.2)
+  );
+  border: 2px solid #ccc;
+  font-family: "Abel";
+  border-radius: 5px;
+
+  .InfoUser {
+    display: flex;
+    .InfoUser_avta {
+      .InfoUser_avta-img {
+        width: 65%;
+        margin: 0 auto;
+        img {
+          width: 100%;
+          height: 230px;
+          border-radius: 50%;
+          margin-top: 20px;
+          border: 2px solid;
+          border-color: #fff;
+          box-shadow: inset;
+        }
+      }
+      .inFo_name {
+        text-align: center;
+        margin: 10px;
+        font-size: 26px;
+        font-weight: 700;
+      }
+    }
+    .info_user {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      margin-top: 40px;
+      div {
+        font-size: 20px;
+      }
+      .user_detail {
+        width: 46%;
+        margin: 2%;
+        div {
+          border-bottom: 0.5px solid;
+          font-size: 18px;
+        }
+        .list {
+          font-size: 20px;
+          font-weight: 600;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  .handle_user {
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+    padding-bottom: 30px;
+
+    button {
+      width: 90px;
+      margin-left: 20px;
+      background: black;
+      color: #fff;
+      border: none;
+      font-size: 16px;
+      font-weight: 600;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+    .canl {
+      margin-right: 40px;
+    }
+  }
+}
+.nav {
+  font-size: 16px;
+  font-weight: 600;
+}

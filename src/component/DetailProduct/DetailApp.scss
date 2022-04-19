@@ -1,0 +1,57 @@
+.detailProduct {
+  margin: 0 5%;
+  border: 1px solid;
+  margin-top: 50px;
+  font-family: "Abel";
+  .img_product {
+    display: flex;
+    div {
+      width: 50%;
+      img {
+        width: 80%;
+        height: 400px;
+        padding: 20px;
+      }
+    }
+    .info_detail {
+      width: 50%;
+      padding-left: 30px;
+      .name_Product {
+        margin-top: 20px;
+        h1 {
+          border-bottom: 1px solid;
+        }
+        h2 {
+          color: red;
+          font-weight: 700;
+        }
+      }
+      .amount_product {
+        ul {
+          list-style: none;
+          display: flex;
+          align-items: center;
+          gap: 30px;
+          li {
+            font-size: 18px;
+            font-weight: 600;
+          }
+        }
+      }
+      .Product_typeo {
+        font-size: 18px;
+      }
+      .Add_product {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        margin-top: 50px;
+      }
+    }
+  }
+  .symbol {
+    font-weight: 600;
+    padding-right: 15px;
+    color: black;
+  }
+}

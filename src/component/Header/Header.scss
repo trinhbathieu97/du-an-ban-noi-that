@@ -1,0 +1,129 @@
+.header {
+  padding-left: 58px;
+  padding-right: 71px;
+  height: 71px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 29px;
+  .MenuRPS {
+    display: none;
+  }
+  .header_navbar {
+    display: flex;
+
+    .header_menu-logo {
+      padding: 24px;
+      background-color: #000;
+    }
+    .header_list-navbar {
+      display: flex;
+      align-items: center;
+      .Home {
+        font-size: 18px;
+      }
+      a {
+        padding: 0 50px;
+        text-decoration: none;
+        color: #22232b;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 17px;
+        font-family: "Abel";
+      }
+    }
+  }
+
+  .header_cart-login {
+    display: flex;
+    align-items: center;
+    .add_product-header {
+      position: relative;
+      .yes_product-header {
+        position: absolute;
+        top: -9px;
+        right: -10px;
+        font-size: 12px;
+        background: red;
+        color: #fff;
+        height: 18px;
+        width: 18px;
+        text-align: center;
+        border-radius: 50%;
+      }
+    }
+    a {
+      text-decoration: none;
+      color: #22232b;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 17px;
+      font-family: "Abel";
+      padding-left: 55px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .header {
+    padding: 0;
+    .MenuRPS {
+      display: block;
+      padding-left: 30px;
+      padding-right: 20px;
+    }
+    .header_navbar {
+      .header_list-navbar {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        display: none;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background: #000;
+        z-index: 11;
+        a {
+          color: #fff;
+        }
+
+        .header_menu-RPS {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          padding-left: 18px;
+          padding-right: 23px;
+          margin-top: 20px;
+          margin-bottom: 50px;
+          .cart_X-RPS {
+            display: flex;
+            .cart_X {
+              margin-left: 42px;
+              height: 24px;
+              width: 24px;
+            }
+          }
+        }
+        .list_menu-RPS {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          a {
+            font-size: 18px;
+            padding-left: 18px;
+            padding-right: 0;
+            padding-top: 25px;
+            padding-bottom: 25px;
+          }
+        }
+      }
+    }
+  }
+
+  .header_cart-login {
+    a {
+      display: none;
+    }
+  }
+}
